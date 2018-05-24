@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
         :recoverable, :rememberable, :validatable
   has_many :projects
   has_many :teams
+  belongs_to :team
 end
